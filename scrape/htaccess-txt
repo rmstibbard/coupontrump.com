@@ -1,0 +1,6 @@
+order deny,allow
+deny from all
+allow from 162.213.255.30
+allow from 127.0.0.1
+allow from localhost
+allow from 84.9.53.12

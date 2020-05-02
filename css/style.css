@@ -1,0 +1,542 @@
+/* General and small devices up to 767px) - No media query since this is the default in Bootstrap */
+
+
+.dropdown-menu {   background-color: black; }
+
+button {border-radius: 0 !important;}
+
+.container-fluid { max-width: 95%; margin-left: auto; margin-right: auto; }
+
+.logo { position: absolute; top: 0; }
+
+.social_media {display: none}
+
+.shoutout { clear: both; text-align: center; margin-bottom: 50px; margin-left: auto; margin-right: auto; border: 5px solid red;}
+.shoutout h3 a { color: black; text-decoration: none;}
+.shoutout h3 a:hover { color: grey; text-decoration: none;}
+
+.navbar { clear: both; border-radius: 0; }
+.navbar .deal, .navbar .add { font-weight: bold; font-size: 1.25em; text-transform: uppercase; }
+
+nav li a {color: white !important; }
+nav li a:hover {color: red !important; outline: none}
+
+
+.home {color: white !important; }
+.home:hover {color: red !important; }
+  
+.search_forms { width: 95%; margin: auto; text-align: center; }
+#multiple_urls {width: 100%; height: 100px; border: 1px solid black; resize:vertical;}
+
+legend {font-size: 10pt; }
+fieldset { padding: 1em;  font:80%/1 sans-serif; }
+legend { margin: 0; padding: 0; position: static; border: 0; top: auto; left: auto; float: none;
+    display: block; font-size: 14px; line-height: 18px; }
+
+.form-control { width: 100%; margin-left: auto; margin-right: auto; border: 1px solid black;
+    border-radius: 0px }
+.form-control:focus {border: 1px solid black;}
+
+input, select { box-shadow: none !important }
+select.additional_details { height: 25px; font-size: 9pt; padding-top: 0; padding-bottom: 0}
+
+label[for=maxprice1] {font-weight: normal; margin-right: 5px ; vertical-align: middle}
+label[for=maxprice2] {font-weight: normal; margin-right: 5px ; vertical-align: middle}
+
+#maxprice1, #maxprice2 {width: 50px; height: 25px}
+
+.search_button { width: 100%; margin: 10px 0 20px 0; background-color: grey; color: white;
+  border: 1px solid black; border-radius: 0; }
+
+.order {width: 60%;float: left}
+
+#subcat {margin-bottom: 15px; opacity: 0.5}
+
+.loading { opacity: 1; background-image: url('../images/loading.png');
+    background-repeat: no-repeat; background-position: 50% 0; }
+
+.course_list {clear: both; margin-top: 40px;}
+p.deal {text-align: center; font-size: 13pt; margin-top: 30px; margin-bottom: 60px;}
+
+.course_block .course_image  { max-width: 100%; height: auto; }
+.course_block { height: auto; margin-bottom: 100px; padding-top: 20px}
+figure.course_block { text-align: center;}
+.course_block h3 { max-width: 100%; margin: 15px auto 10px auto; text-transform: capitalize}
+.course_block h3 a { color: black; text-decoration: none;}
+.course_block h3 a:hover { color: grey; text-decoration: none;}
+.course_block .reduced_price {display: block; font-weight: bold; color: red;}
+
+div.author_description {clear: both; font-size: 14px; text-align: justify; margin-left: auto;
+    margin-right: auto; max-width: 95%; margin-bottom: 60px; margin-top: -40px}
+    
+.author_description h4 {text-align: center; text-decoration: underline; margin-bottom: 10px;}
+
+/*.author_description a {color: grey; text-decoration: underline}
+.author_description a:hover {color: black; text-decoration: underline}
+*/
+.single_course { margin-left: auto; margin-right: auto; margin-top: 50px}
+.single_course h2 {text-transform: capitalize}
+.single_course h3 { font-size: 16px; margin-bottom: 10px;  }
+.single_course h4 { font-size: 14px; font-weight: bold; margin-bottom: 10px;  }
+
+.subtitle { display: none;}
+
+.author {text-transform: uppercase}
+.author a {color: black; text-decoration: none}
+.author a:hover {color: grey; text-decoration: none}
+
+.course_block img:hover {opacity: 0.7}
+
+.instructions, footer {clear: both; width: 100%; margin-left: auto; margin-right: auto;}
+.instructions { border-top: 1px solid black; padding-top: 10px; text-align: center; }
+
+footer { font-size: 8pt; padding-bottom: 50px;} 
+
+.add_courses { font-size: 8pt; }
+  
+.clear { clear: both; }
+
+h3.tab-title {font-size: 16pt; }
+
+.course_description { text-align: justify; }
+
+div.get_deal { margin: 50px auto; width: 100%; } 
+button.get_deal, button#best_coupon { border: 1px solid black; border-radius: 0;  height: auto !important; white-space: normal}
+button.get_deal_sm { border: 1px solid black; border-radius: 0;  height: auto !important; white-space: normal;}
+button#best_coupon {font-weight: bold; font-size: 18pt; margin-top: 20px; margin-bottom: 40px;}
+
+
+.maintenance { display: block; font-family: sans-serif; margin-top: 100px; text-align: center; 
+      max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.5em; border: 4px solid black;}
+
+h2.error, h2.results, h2.no_results, .thank_you h2, h2.featured {
+  clear: both; padding-top: 30px; text-align: center;  font-size: 22pt;
+}
+
+div.more {margin-bottom: 60px}
+.more h2 {font-size: 18pt; font-weight: bold; text-transform: none}
+
+.thank_you h2 { padding-bottom: 30px; }
+    
+.error {color: red; }
+
+.thank_you h3 { text-align: center; margin-bottom: 30px; font-size: 18px}
+
+div.submit_urls, .thank_you, div.remove_courses, div.featured {margin-top: 40px; margin-left: auto; margin-right: auto }
+.submit_urls p, .thank_you p, .remove_courses p, div.privacy_policy, div.about_us {text-align: justify; font-size: 12pt;}
+.submit_urls ul, .thank_you ol {text-align: left; font-size: 12pt; margin-bottom: 30px}
+div.featured p { font-size: 14pt; text-align: justify; margin-top: 30px; margin-bottom: 30px}
+
+div.remove_courses { margin-bottom: 50px}
+
+.submit_urls input { margin-bottom: 10px; border: 1px solid black; }
+
+button#submit_urls { margin-top: 10px;  margin-bottom: 50px; border: 1px solid black;
+    border-radius: 0; width: 50%; margin-left: 25%; margin-right: 25%; font-size: 18px}
+
+.expiry { display: block; font-weight: bold; font-size: 0.8em; margin-bottom: 10px}
+
+div.share { width: 100%; }
+
+div.share div {display: inline-block; margin-left: 2px; margin-right: 2px}
+
+div.share a:hover {text-decoration: none; cursor: pointer; opacity: 0.8}
+
+.facebook, .google-plus, .linkedin, .twitter { background-image: url('../images/sprites.png');
+    background-repeat: no-repeat; }
+    
+.facebook { background-position: 0 0; width: 35px; height: 35px; }
+.linkedin { background-position: -37px 0; width: 35px; height: 35px; }
+.twitter { background-position: -37px -37px; width: 35px; height: 35px; }
+.google-plus { background-position: 0 -37px; width: 35px; height: 35px; }
+
+.add_field_button { margin-top: 10px; width: 22%; margin-right: 39%; margin-left: 39%; background-color: grey; 
+  color: white; border: 1px solid black;  padding: 5px 20px }
+  
+.add_field_button:hover {color: black; background-color: lightgray;border: 1px solid black;}
+
+#star-ratings-sprite {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2605/star-rating-sprite.png") repeat-x;
+  font-size: 0;
+  height: 21px;
+  line-height: 0;
+  overflow: hidden;
+  text-indent: -999em;
+  width: 110px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+  
+.rating {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2605/star-rating-sprite.png") repeat-x;
+    background-position: 0 100%;
+    float: left;
+    height: 21px;
+    display:block;
+  }
+  
+.deal_image {text-align: center; }
+
+.best_coupon {text-align: center;}
+
+.alert { color: red;} 
+
+
+.cookies {  font-size: 0.8em; }
+
+.disclaimer, .updated {text-align: center;}
+
+div.privacy_policy, div.about_us {margin-top: 40px; margin-bottom: 60px}
+.privacy_policy h1, .about_us h1 {font-size: 22pt; font-weight: bold;}
+.privacy_policy h2, .about_us h2 {font-size: 16pt; font-weight: bold}
+.privacy_policy p {margin-bottom: 40px; text-align: justify}
+.about_us p {text-align: justify}
+
+.about_us h1 {margin-bottom: 20px}
+
+.profile_pic  { float: left; margin-right: 20px; margin-bottom: 20px;}
+
+ul.top_affs { list-style: none; margin-left: auto; margin-right: auto; text-align: center}
+.top_affs li {display: inline-block; }
+
+.bottom_affs { clear: both; margin-top: 20px; margin-bottom: 60px; text-align: center}
+/*
+.noscript {
+   margin: 10px auto 10px auto;
+   padding: 5px;
+   width: 75%;
+   overflow-y: auto;
+   text-align: center;
+   background-color: red;
+   color: white;
+   line-height: 10px;
+   -webkit-box-shadow: 7px 7px 5px rgba(50,50,50,0.75);
+   -moz-box-shadow: 7px 7px 5px rgba(50,50,50,0.75);
+   box-shadow: 7px 7px 5px rgba(50,50,50,0.75); 
+}
+
+noscript h1 {
+   font-size: 1.3em;
+   margin-bottom: 1em;
+}
+
+noscript p {
+   font-size: 0.9em;
+}
+
+*/
+
+
+.blink {
+  animation: blink 2s steps(5, start) infinite;
+  -webkit-animation: blink 2s steps(5, start) infinite;
+}
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+.blink:hover {
+  animation: none;
+}
+
+
+@media (max-width: 500px) {
+  
+    .logo { background-image: url('../images/logo-small.png'); width: 307px; height: 60px;}
+    .header h1 { margin-top: 50px; margin-left: 60px; font-size: 15px;}
+    
+    .order {width: 100%;float: none}
+    
+    .shoutout {max-width: 95%; }
+    
+    .course_block  {width: 100%; }
+    .course_block h3 {font-size: 14pt; }
+    .course_block img, .course_description {display: none !important}
+    
+    .course_block {margin-bottom: 0px}
+    
+    .single_course {width: 95%;}
+    .single_course figure {display: none}
+    
+    .single_course h2, .single_course h3, .single_course h4 {text-align: center;}
+    
+    .single_course #star-ratings-sprite {margin: 0 auto; }
+    .single_course .ratings_stats {text-align: center; }
+   
+    button.get_deal, button#best_coupon { width: 100%; font-size: 14pt; margin-top: 0 !important} 
+    button.get_deal_sm {display: none}
+    button#submit_urls { width: 100%; margin-left: 0; margin-right: 0}    
+
+    .space1 { height: 0; }
+    
+    .share_icon {height: 30px; width: 30px; margin-left: 8px; margin-right: 8px;}
+    .share { display: none}
+    
+    h2.results, h2.no_results {
+      padding-top: 10px; padding-bottom: 10px;
+    }
+
+    div.submit_urls, div.remove_courses, div.privacy_policy, div.about_us, div.featured {max-width: 90%; }
+    
+    div.author_description, .best_coupon_image, .profile_pic, .bottom_affs {display: none;}
+    
+    
+}
+
+
+@media (min-width:501px) and (max-width: 767px) {
+  
+ 
+  .logo { background-image: url('../images/logo-medium.png'); width: 480px; height: 94px;}
+  .header h1 { margin-top: 85px; margin-left: 95px;  font-size: 15px;}
+  
+  .course_block {padding-bottom: 10px; padding-top: 10px;margin-bottom: 10px; }
+  .course_block img {float: left; width: 200px;margin-right: 15px}
+  .course_block h3 {font-size: 17px; margin: 0}
+  
+  .course_block .author { font-size: 14px}
+  .course_block h3, .course_block .author, .course_block .subtitle,
+      .course_block .price {text-align: left !important; margin: 0 }
+
+    
+  .course_block .share, .course_block #star-ratings-sprite {display: none}
+  
+  .course_block {border-bottom: 1px solid black}
+  
+  .shoutout {max-width: 95%; }
+  
+  .single_course {width: 95%; }
+  .single_course img {width: 100%}
+  .single_course h2, .single_course h3, .single_course h4 {text-align: center;}
+    
+  button.get_deal, button.get_deal_sm, button#best_coupon { width: 100%; font-size: 16pt; }
+  button.get_deal_sm {margin-top: 30px; margin-bottom: 30px;}
+  
+  div.get_deal {display: none}
+
+  .single_course #star-ratings-sprite {margin: 0 auto !important; }
+  .single_course .ratings_stats {text-align: center !important; }
+  
+  .course_description {margin-bottom: 30px}
+
+  .space1 { height: 20px; }
+  
+  .share_icon {height: 30px; width: 30px; margin-left: 8px; margin-right: 8px;}
+  
+  h2.results, h2.no_results { padding-top: 15px; padding-bottom: 15px; }
+   
+  div.submit_urls, div.remove_courses, div.privacy_policy, div.about_us, div.featured {max-width: 90%;}
+  
+  button#submit_urls { width: 100%; margin-left: 0; margin-right: 0; }
+  
+  .best_coupon_image, .bottom_affs {display: none ;}
+  
+  .instructions {border-top: none}
+  
+  .profile_pic {float: right; margin-left: 20px; margin-bottom: 20px; height: 129px; width: 106px}
+  
+  
+}
+
+
+
+/* Small devices (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .logo { background-image: url('../images/logo-large.png'); width: 750px; height: 147px;}
+  .header h1 { margin-top: 125px; margin-left: 140px; font-size: 18pt; }
+  
+  .search_forms { width: 650px; margin-left: auto; margin-right: auto; }
+  .form-group { width: 300px; }
+  .search_button { width: 300px; }
+
+  #category_forms { float: left; }
+  #keyword_author_form { float: right; }
+  
+  .shoutout {max-width: 650px;}
+  
+  .course_block figcaption  {display: block; width: 70%; margin-left: auto; margin-right: auto}
+  .course_block h3 {display: block; font-size: 12pt; }
+  
+  .col-sm-6:nth-child(2n+1){ clear: left;}
+    
+    
+  .single_course {width: 650px; }
+  .single_course img {width: 50%; float: left; margin-right: 20px; margin-bottom: 20px }
+  
+  button.get_deal, button.get_deal_sm { width: 80%; position: relative; left:15%; right: 15%; font-size: 15pt; }
+  div.get_deal_sm {display: none}
+  button#best_coupon { width: 85%;}
+   
+   .single_course .ratings_stats {text-align: left; }
+   .single_course #star-ratings-sprite {margin-left: 0}
+   
+   .space1 { height: 20px; }
+  
+   div.submit_urls, div.remove_courses, div.featured {max-width: 750px; }
+   
+   div.privacy_policy, div.about_us {max-width: 95%; }
+
+ .best_coupon_image {margin-left:auto; margin-right: auto; width: 750px}
+ .profile_pic {float: right; margin-left: 20px; margin-bottom: 20px; height: 173px; width: 143px}
+  
+  .disclaimer { text-align: left; float:left;}
+  .updated { text-align: right; float:right; }
+  
+  
+}
+
+
+
+/* Medium devices (992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .logo { background-image: url('../images/logo-large.png'); width: 750px; height: 147px;}
+  .header h1 { margin-top: 125px; margin-left: 140px;  font-size: 20pt; }
+  
+  .social_media {display: block; margin-top: 20px; margin-right: 30px}
+  
+  .shoutout {max-width: 900px; }
+  
+  .search_forms { width: 850px; margin-left: auto; margin-right: auto; }
+  .form-group { width: 400px; }
+  .search_button { width: 400px; }
+
+  #category_forms { float: left; }
+  #keyword_author_form { float: right; }
+  
+  p.deal {margin-left: 5%; margin-right: 5%;}
+  
+  .course_block figcaption  { display: block; width: 80%; margin-left: auto; margin-right: auto}
+  .course_block h3 {display: block; font-size: 14pt; }
+  
+  .col-md-4:nth-child(3n+1){ clear: left; }
+  
+  .single_course, .more {width: 850px; }
+  .single_course img {width: 50%; float: left; margin-right: 20px; margin-bottom: 20px;}
+  
+  button.get_deal, button.get_deal_sm  { width: 70%; position: relative; left:15%; right: 15%; font-size: 16pt; }
+  button.get_deal_sm {display: none}
+  button#best_coupon { width: 75%;}
+
+  .single_course #star-ratings-sprite {margin-left: 0}
+  
+  .space1 { height: 50px; }
+  
+  div.submit_urls, div.remove_courses, div.featured {max-width: 750px; }
+  div.privacy_policy, div.about_us { max-width: 100%; }
+  
+  .best_coupon_image {margin-left:auto; margin-right: auto; width: 900px}
+  .profile_pic {float: right; margin-left: 20px; margin-bottom: 20px}
+  
+  .disclaimer { text-align: left; float:left;}
+  .updated { text-align: right; float:right; }
+  
+
+}
+
+
+
+
+@media (min-width: 900px) and (max-width: 1199px) {
+    .social_media {display: block; margin-top: 20px; margin-right: 30px}
+}
+
+
+
+
+
+/* Large devices (1200px and up) */
+@media (min-width: 1200px) {
+  
+  p.deal {margin-left: 10%; margin-right: 10%;}
+  
+  .logo { background-image: url('../images/logo-large.png'); width: 750px; height: 147px; display: inline-block}
+    
+  .header h1 { margin-top: 125px; margin-left: 140px; font-size: 20pt; }
+  
+  .social_media {display: block; margin-top: 20px; margin-right: 30px}
+  
+  .clicks_sum {display: inline-block; font-size: 24pt; }
+  
+  .search_forms { width: 950px; margin-left: auto; margin-right: auto; }
+  .form-group { width: 450px; }
+  .search_button { width: 450px; }
+  
+  .shoutout {max-width: 1100px; }
+  
+  #category_forms { float: left; }
+  #keyword_author_form { float: right; }
+  
+  .course_block figcaption  {display: block; width: 70%; margin-left: auto; margin-right: auto;
+    position: relative}
+  .course_block h3 {display: block; font-size: 14pt; }
+  
+  .col-lg-3:nth-child(4n+1){ clear: left; }
+  
+  .single_course, .thank_you, .more {width: 950px; margin-left: auto; margin-right: auto; }
+  .single_course img {width: 50%; float: left; margin-right: 20px; margin-bottom: 20px;}
+  .single_course #star-ratings-sprite {margin-left: 0}
+  
+  button.get_deal { width: 70%; position: relative; left:15%; right: 15%; font-size: 17pt; }
+  button.get_deal_sm {margin-top: 5px; margin-bottom: 30px; width: 47%; }
+  button.get_deal {display: none}
+  
+  button#best_coupon {width: 60%; max-width: 790px; }
+  
+  .space1 { height: 50px; }
+    
+  div.submit_urls, div.remove_courses, div.featured { max-width: 1000px; }
+  div.privacy_policy, div.about_us { max-width: 75%; margin-left: auto; margin-right: auto; }
+  
+  #multiple_urls {width: 100%; height: 100px; border: 1px solid black; resize:vertical;}
+  
+  .facebook { background-position: -76px 0; width: 20px; height: 20px; }
+  .linkedin { background-position: -100px 0; width: 20px; height: 20px; }
+  .twitter { background-position: -99px -22px; width: 20px; height: 20px; }
+  .google-plus { background-position: -76px -21px; width: 20px; height: 20px; }
+  
+  .best_coupon_image {margin-left:auto; margin-right: auto; width: 1000px}
+  .profile_pic {float: right; margin-left: 20px; margin-bottom: 20px}
+
+  .disclaimer { text-align: left; float:left;}
+  .updated { text-align: right; float:right; }
+  
+  
+}
+
+
+
+@media (max-width: 949px) {
+  .top_affs { display: none}
+  
+}
+
+
+@media (min-width: 950px) and (max-width: 1199px) {
+  ul.top_affs {max-width:100%}
+  .top_affs img {width: 200px; padding-bottom: 20px}
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  ul.top_affs {max-width: 95%}
+  .top_affs img {max-width: 240px; padding-bottom: 20px}
+}
+
+@media (min-width: 1400px) and (max-width: 1549px) {
+  ul.top_affs {max-width:95%}
+  .top_affs img {max-width: 270px; padding-bottom: 20px}
+}
+
+@media (min-width: 1550px) {
+  ul.top_affs {max-width:90%}
+  .top_affs img {max-width: 290px; padding-bottom: 20px}
+}
+
+

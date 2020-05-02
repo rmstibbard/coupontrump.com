@@ -1,0 +1,14 @@
+1) Save existing coupons (except expiring one) as previous:
+
+	UPDATE `yourls_url` SET `prev_coupon` = `coupon` , `prev_url` = `url` , `prev_reduced_price` = `reduced_price` WHERE `active` = 'yes' AND `coupon` != 'expiring_coupon'
+	
+2) Restore previous coupons:
+
+	UPDATE `yourls_url` SET `coupon` = `prev_coupon`, `url` = `prev_url`, `reduced_price` = `prev_reduced_price` WHERE `course_url` LIKE 'https://www.udemy.com/%' AND `coupon` = 'expiring_coupon' AND `prev_coupon` != ''
+	
+3) Set courses still with expiring_coupon to inactive:
+
+	UPDATE `yourls_url` SET `active` = 'no' WHERE `course_url` LIKE 'https://www.udemy.com/%' AND `coupon` = 'expiring_coupon'
+	
+
+	

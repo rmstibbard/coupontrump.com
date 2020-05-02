@@ -1,0 +1,108 @@
+<?php
+
+ini_set('max_execution_time', 0);
+
+set_include_path('../coupontrump-admin-includes/');
+
+function __autoload($class_name) {
+    require_once '../coupontrump-admin-classes/' . $class_name . '.php';
+}
+
+require_once 'scrape-variables.inc.php';
+
+$output_file = "../coupontrump-data/add-new.txt";
+
+$scrape_file = fopen($output_file, "a");
+
+$scrape = new scrape();
+
+$page_title = "Scrape Edudealer";
+
+echo "<h1>" . $page_title . "</h1>";
+
+$formatted_output = "";
+$invalid_list = "";
+
+require_once 'head.inc.php';
+require_once 'curl.inc.php';
+
+
+$site = "www.edudealer.com";
+
+echo "<div style='margin-left: 40px;'>";
+
+    
+for ($i=$from; $i<=$to; $i++) {
+
+    $url = $site . "/page/" . $i;
+    
+    $results_page = curl($url);
+    
+    $results_page = scrape_between($results_page, '<div class="box-holder">', '<div class="paging">');
+    
+    $separate_results = explode('<div class="link-holder">', $results_page);
+    
+   
+    foreach ($separate_results as $separate_result) {
+        
+        if ($separate_result != "") {
+            
+            $start_marker = '<a href="http://' . $site . '/go/';
+            
+            $base_url = trim(scrape_between($separate_result, $start_marker, '" id="coupon-link-'));
+        
+           
+            if ($base_url!="") {
+                
+                $link_url = $site . "/go/" . $base_url;
+                
+                               
+                $udemy_page = curl($link_url);
+                
+                echo $udemy_page;
+                              
+                //$udemy_url = scrape_between($udemy_page, '<meta property="og:url" content="', '" />');
+                //
+                //echo $udemy_url . "<br>";
+                
+                //$coupon = scrape_between($udemy_page, '?couponCode=', '"');
+                //
+                //if ($coupon!="") {
+                //    $output = $udemy_url . "?couponCode=". $coupon. "\n";
+                //} else {
+                //    $output = $udemy_url . "\n";
+                //}
+                //
+                //if ( ($output!="?couponCode=,")
+                //        && ($output!="") 
+                //        && ($output!=",")
+                //        && (strpos($output, "/courses/") === false) 
+                //        && (strpos($output, "/courses/featured") === false) 
+                //        && (strpos($output, "/draft/") === false)
+                //        && (strpos($output, "https://www.udemy.com/") !== false) ) {
+                //    
+                //    if (strpos($output, '&amp;')!==false) {
+                //        $output = explode('&amp;', $output)[0];
+                //    }                    
+                //    
+                //    if (strpos($output, 'https://www.udemy.com/')!==false) {
+                //        echo $output . "<br>\n";
+                //        fwrite ($scrape_file, $output . "\n") ;
+                //    }
+                //}
+            }
+
+        }
+        
+    }
+
+}
+
+
+echo "</div>";
+
+echo "<h1>Done!</h1>";
+
+fclose($scrape_file);
+
+?>
